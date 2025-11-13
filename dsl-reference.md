@@ -928,7 +928,7 @@ Enables the execution of external processes encapsulated within a containerized 
 | ports | `map` | `no` | The container's port mappings, if any  |
 | volumes | `map` | `no` | The container's volume mappings, if any  |
 | environment | `map` | `no` | A key/value mapping of the environment variables, if any, to use when running the configured process |
-| stdin | `string` | `no` | A runtime expression, if any, passed as argv to the command or default container CMD|
+| stdin | `string` | `no` | A runtime expression, if any, passed as standard input to the command or default container CMD|
 | arguments | `string[]` | `no` | A list of the arguments, if any, passed as argv to the command or default container CMD |
 | lifetime | [`containerLifetime`](#container-lifetime) | `no` | An object used to configure the container's lifetime. |
 
