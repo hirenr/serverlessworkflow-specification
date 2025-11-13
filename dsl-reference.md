@@ -1002,7 +1002,7 @@ do:
   - runScript:
       run:
         script:
-          language: javascript
+          language: js
           arguments:
           - hello
           - world
