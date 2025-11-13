@@ -812,7 +812,7 @@ $defs:
                     stdin:
                       type: string
                       title: ContainerStdin
-                      description: A runtime expression, if any, passed as argv to the command or default container CMD
+                      description: A runtime expression, if any, passed as standard input (stdin) to the command or default container CMD
                     arguments:
                       type: array
                       title: ContainerArguments
@@ -847,7 +847,7 @@ $defs:
                       title: ScriptArguments
                       description: A list of the arguments, if any, to the script as argv
                       items:
-                        type: string                    
+                        type: string
                     environment:
                       type: object
                       title: ScriptEnvironment
@@ -894,7 +894,7 @@ $defs:
                       title: ShellArguments
                       description: A list of the arguments, if any, to the shell command as argv
                       items:
-                        type: string    
+                        type: string
                     environment:
                       type: object
                       title: ShellEnvironment
