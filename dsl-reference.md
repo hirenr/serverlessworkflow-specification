@@ -994,19 +994,21 @@ Enables the execution of custom scripts or code within a workflow, empowering wo
 
 ```yaml
 document:
-  dsl: '1.0.2'
-  namespace: test
+  dsl: 1.0.2
+  namespace: examples
   name: run-script-example
-  version: '0.1.0'
+  version: 1.0.0
 do:
   - runScript:
       run:
         script:
-          language: js
+          language: javascript
           arguments:
-            greetings: Hello, world!
-          code: >
-            console.log(greetings)
+          - hello
+          - world
+          code: |
+            const [_, __, arg0, arg1] = process.argv;
+            console.log('arg > ', arg0, arg1)
 ```
 
 ##### Shell Process
